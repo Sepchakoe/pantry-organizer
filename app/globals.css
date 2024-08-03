@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-modal {
+  top: 2% !important; /* Adjust the percentage to move the modal further down */
+}
+
+.small-font {
+  font-size: 10px;
+}
+
+/* styles/globals.css */
+
+.recipe-card {
+  border: 1px solid #83bec6;
+  /*Bootstrapinfocolor*/border-radius: 15px;
+  padding: 12px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.recipe-card-img {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.recipe-card-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-footer {
+  background: white;
+  border-top: 0;
+  padding: 0.75rem;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* styles/globals.css */
+
+.navbar-nav .nav-link {
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 20px; /* Make sure the corners are rounded */
+  padding: 0.5rem 1rem; /* Add padding for better spacing */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff8c00; /* Change to your preferred hover color */
+  background-color: rgba(0, 123, 255, 0.1); /* Add a transparent blue background */
+}
+
+.navbar-nav .nav-link:focus {
+  color: #007bff; /* Change to your preferred focus color */
+  background-color: rgba(0, 123, 255, 0.1); /* Add a transparent blue background */
+}

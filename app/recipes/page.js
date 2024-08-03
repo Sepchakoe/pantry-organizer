@@ -80,7 +80,10 @@ export default function Recipes() {
         </Card.Header>
         <Card.Body>
           <Row>
-            {inventory.map(({ name, quantity }) => (
+            {inventory.length === 0 ? (
+            <p className="text-center mt-3">Please add items in order to see recipe.</p>
+          ):(
+            inventory.map(({ name, quantity }) => (
               <Col key={name} md={6} lg={4} className="mb-3">
                 <Card>
                   <Card.Body>
@@ -89,7 +92,8 @@ export default function Recipes() {
                   </Card.Body>
                 </Card>
               </Col>
-            ))}
+            ))
+          )}
           </Row>
         </Card.Body>
       </Card>
@@ -126,7 +130,7 @@ export default function Recipes() {
           ))
         ) : (
           <Col>
-            <p className="text-center">No recipe suggestions available. Please add items to your pantry.</p>
+            <p className="text-center">No recipe suggestions available.</p>
           </Col>
         )}
       </Row>

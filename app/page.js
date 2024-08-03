@@ -141,9 +141,6 @@ export default function Home() {
         />
       </InputGroup>
 
-      {/* <Button className="mb-4" variant="primary" onClick={handleOpen}>
-        Add New Item
-      </Button> */}
       <div className="mb-4 d-flex">
         <Button variant="primary" onClick={handleOpen} className="me-2">
           Add New Item

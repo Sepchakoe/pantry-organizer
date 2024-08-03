@@ -67,8 +67,8 @@ export default function Recipes() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/recipes">Recipe Suggestion</Nav.Link>
+              <Nav.Link href="/" className="mx-3">Home</Nav.Link>
+              <Nav.Link href="/recipes" className="mx-3">Recipe Suggestion</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

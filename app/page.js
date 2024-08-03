@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Modal, Button, Form, InputGroup, Container, Card, ListGroup, Navbar, Nav } from 'react-bootstrap';
 import '/app/globals.css'; 
 
-
 export default function Home() {
   const [inventory, setInventory] = useState([]);
   const [open, setOpen] = useState(false);
@@ -53,6 +52,12 @@ export default function Home() {
         await setDoc(docRef, { quantity: quantity - 1 });
       }
     }
+    await updateInventory();
+  };
+
+  const deleteItem = async (item) => {
+    const docRef = doc(collection(firestore, 'inventory'), item);
+    await deleteDoc(docRef);
     await updateInventory();
   };
 
@@ -162,7 +167,8 @@ export default function Home() {
                 </div>
                 <div className="d-flex">
                   <Button variant="outline-success" className="me-2" onClick={() => addItem(name, 1)}>Add</Button>
-                  <Button variant="outline-danger" onClick={() => removeItem(name)}>Remove</Button>
+                  <Button variant="outline-danger" className="me-2" onClick={() => removeItem(name)}>Remove</Button>
+                  <Button variant="outline-danger" className="me-2" onClick={() => deleteItem(name)}>Delete</Button>
                 </div>
               </Card.Body>
             </Card>

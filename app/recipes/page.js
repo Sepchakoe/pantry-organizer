@@ -98,7 +98,7 @@ export default function Recipes() {
         </Container>
       </Navbar>
 
-      <Modal show={aboutOpen} onHide={handleAboutClose} className="about-modal">
+      <Modal className="about-modal" show={aboutOpen} onHide={handleAboutClose}>
         <Modal.Header closeButton>
           <Modal.Title className="w-100 text-center">Pantry Assistant</Modal.Title>
         </Modal.Header>

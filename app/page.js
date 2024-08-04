@@ -97,7 +97,7 @@ export default function Home() {
         </Container>
       </Navbar>
 
-      <Modal show={aboutOpen} onHide={handleAboutClose} className="about-modal">
+      <Modal className="about-modal" show={aboutOpen} onHide={handleAboutClose}>
         <Modal.Header closeButton>
           <Modal.Title className="w-100 text-center">Pantry Assistant</Modal.Title>
         </Modal.Header>
@@ -124,7 +124,7 @@ export default function Home() {
       <h1 style={{ marginTop: '7%'}}>Welcome to Pantry Assistant</h1>
       <img src="/logo.png" alt="Logo" style={{ maxWidth: '200px', height: 'auto' }} />
 
-      <Modal show={open} onHide={handleClose} className="custom-modal">
+      <Modal className="custom-modal" show={open} onHide={handleClose} >
         <Modal.Header closeButton>
           <Modal.Title>Add Item</Modal.Title>
         </Modal.Header>

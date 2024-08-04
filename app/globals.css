@@ -4,15 +4,19 @@
   margin: 0;
 }
 
+/* adjust Add item window*/
 .custom-modal {
-  top: 2% !important; /* Adjust the percentage to move the modal further down */
+  top: 27% 
+}
+
+/* adjust about window*/
+.about-modal {
+  top: 15%;
 }
 
 .small-font {
   font-size: 10px;
 }
-
-/* styles/globals.css */
 
 .recipe-card {
   border: 1px solid #83bec6;
@@ -53,8 +57,6 @@
   border-radius: 15px;
   overflow: hidden;
 }
-
-/* styles/globals.css */
 
 .navbar-nav .nav-link {
   transition: color 0.3s ease, background-color 0.3s ease;

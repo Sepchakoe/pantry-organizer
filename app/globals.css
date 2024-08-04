@@ -6,12 +6,12 @@
 
 /* adjust Add item window*/
 .custom-modal {
-  top: 25% 
+  margin-top: 12%;
 }
 
 /* adjust about window*/
 .about-modal {
-  top: 10%;
+  margin-top: 5%;
 }
 
 .small-font {

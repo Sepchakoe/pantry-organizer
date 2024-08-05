@@ -116,7 +116,7 @@ export default function Home() {
         </Modal.Body>
           
         <Modal.Footer className="mb-0 text-center py-2 w-100" style={{ color: '#87510f', fontSize: '12px' }}>
-          <p>© 2024 @Koe Myint</p>
+          <p>Koe Myint © 2024</p>
         </Modal.Footer>
       </Modal>
 
